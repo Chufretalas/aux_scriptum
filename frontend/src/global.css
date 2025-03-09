@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Jost";
+    font-style: normal;
+    src: local("JostFont"),
+        url("assets/fonts/Jost-VariableFont_wght.ttf") format("truetype");
+}
+
+*,
+span,
+a {
+    font-family: "Jost";
+}

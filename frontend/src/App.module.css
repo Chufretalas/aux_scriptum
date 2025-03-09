@@ -1,0 +1,12 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main section {
+    border: 1px solid black;
+}
+
+.response_box {
+    white-space: break-spaces;
+}
