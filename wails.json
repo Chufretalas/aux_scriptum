@@ -1,0 +1,13 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "aux_scriptum",
+  "outputfilename": "Aux Scriptum",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Chufretalas",
+    "email": "marcobene.contact@gmail.com"
+  }
+}
