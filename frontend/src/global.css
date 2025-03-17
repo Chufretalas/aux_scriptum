@@ -1,8 +1,20 @@
+:root {
+    --yellow: #F4CE14;
+    --orange: #f36f29;
+    --grey: #45474B;
+    --dark-grey: #2b2b2d;
+}
+
 @font-face {
     font-family: "Jost";
     font-style: normal;
     src: local("JostFont"),
         url("assets/fonts/Jost-VariableFont_wght.ttf") format("truetype");
+}
+
+
+body {
+    background-color: var(--grey);
 }
 
 *,
