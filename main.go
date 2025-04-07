@@ -1,17 +1,21 @@
 package main
 
 import (
+	"context"
 	"embed"
 
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
+
+	"github.com/Chufretalas/aux_scriptum/db"
 )
 
 //go:embed all:frontend/dist
 var assets embed.FS
 
 func main() {
+
 	// Create an instance of the app structure
 	app := NewApp()
 
@@ -26,6 +30,9 @@ func main() {
 		OnStartup: app.startup,
 		Bind: []interface{}{
 			app,
+		},
+		OnShutdown: func(ctx context.Context) {
+			db.DB.Close()
 		},
 	})
 

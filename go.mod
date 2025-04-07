@@ -1,8 +1,11 @@
-module aux_scriptum
+module github.com/Chufretalas/aux_scriptum
 
 go 1.23
 
-require github.com/wailsapp/wails/v2 v2.10.0
+require (
+	github.com/mattn/go-sqlite3 v1.14.27
+	github.com/wailsapp/wails/v2 v2.10.0
+)
 
 require (
 	github.com/bep/debounce v1.2.1 // indirect

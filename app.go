@@ -2,6 +2,8 @@ package main
 
 import (
 	"context"
+
+	"github.com/Chufretalas/aux_scriptum/db"
 )
 
 // App struct
@@ -17,5 +19,6 @@ func NewApp() *App {
 // startup is called when the app starts. The context is saved
 // so we can call the runtime methods
 func (a *App) startup(ctx context.Context) {
+	db.ConnectDB("./data.db")
 	a.ctx = ctx
 }
